@@ -42,9 +42,9 @@ grpcurl -plaintext -proto elixir_grpc.proto -d '{"id": 1}' localhost:50051 elixi
 
 ```
 grpcurl -plaintext -proto elixir_grpc.proto -d '{"id": 2}' localhost:50051 elixir_grpc.User.Get
-ERROR:
-Code: NotFound
-Message: Some requested entity (e.g., file or directory) was not found
+
+  ERROR:
+    Code: NotFound
+    Message: Some requested entity (e.g., file or directory) was not found
 
 ```
-
