@@ -19,7 +19,8 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/elixir_grpc](https://hexdocs.pm/elixir_grpc).
 
-```grpcurl -plaintext -proto elixir_grpc.proto -d '{"first_name": "Bob", "last_name": "Smith", "age": 40}' localhost:50051 elixir_grpc.User.Create
+```
+grpcurl -plaintext -proto elixir_grpc.proto -d '{"first_name": "Bob", "last_name": "Smith", "age": 40}' localhost:50051 elixir_grpc.User.Create
 
   {
   "id": 1,
@@ -29,7 +30,7 @@ be found at [https://hexdocs.pm/elixir_grpc](https://hexdocs.pm/elixir_grpc).
 }
 ```
 
-````
+```
 grpcurl -plaintext -proto elixir_grpc.proto -d '{"id": 1}' localhost:50051 elixir_grpc.User.Get
 
   {
@@ -39,8 +40,7 @@ grpcurl -plaintext -proto elixir_grpc.proto -d '{"id": 1}' localhost:50051 elixi
 }
 ```
 
-````
-
+```
 grpcurl -plaintext -proto elixir_grpc.proto -d '{"id": 2}' localhost:50051 elixir_grpc.User.Get
 ERROR:
 Code: NotFound
@@ -48,4 +48,3 @@ Message: Some requested entity (e.g., file or directory) was not found
 
 ```
 
-```
